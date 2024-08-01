@@ -1,6 +1,10 @@
 # Kargo Stack Sample Deployment
 
-Repo shows how to get a baseline Kargo "stack" install (i.e. Kargo + Dependencies)
+Repo shows how to get a baseline Kargo "stack" install (i.e. Kargo + [Dependencies](https://kargo.akuity.io/how-to-guides/installing-kargo#basic-installation))
+
+* Kargo
+* Cert Manager
+* Argo Rollouts
 
 ## Argo CD
 

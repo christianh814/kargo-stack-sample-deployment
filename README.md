@@ -8,7 +8,7 @@ Repo shows how to get a baseline Kargo "stack" install (i.e. Kargo + [Dependenci
 
 ## Argo CD
 
-You must enable helm with kustomize by adding `--enable-kustomize` to the `argocd-cm`
+You must enable helm with kustomize to your Argo CD installation by adding `--enable-kustomize` to the `argocd-cm`
 
 ```yaml
 apiVersion: v1

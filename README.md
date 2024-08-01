@@ -34,5 +34,5 @@ The UI will be available under [https://localhost:8080](https://localhost:8080)
 
 If you're using the repo "as is", the login information for Kargo is set to:
 
-*Username:* `admin`
-*Password:* `admin`
+Username: `admin`
+Password: `admin`

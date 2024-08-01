@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# Only skips dry run when resource is NOT there. Helpful for bootstrapping
+## https://argo-cd.readthedocs.io/en/stable/user-guide/sync-options/#skip-dry-run-for-new-custom-resources-types
+commonAnnotations:
+  argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+
+helmCharts:
+- name: cert-manager
+  repo: https://charts.jetstack.io
+  version: 1.14.5
+  valuesFile: cert-manager-values.yaml
+  releaseName: cert-manager
+  namespace: cert-manager
+
+resources:
+- ns.yaml
